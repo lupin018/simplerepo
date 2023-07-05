@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website</title>
+    <style>
+      /* CSS styling goes here */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+      }
+      h1 {
+        margin: 0;
+      }
+      nav {
+        background-color: #f2f2f2;
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav li {
+        display: inline-block;
+        margin: 0 10px;
+      }
+      nav a {
+        color: #333;
+        text-decoration: none;
+      }
+      main {
+        padding: 20px;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+
+
+      h1 {
+    color: #333;
+}
+
+#addBlogOption {
+    margin-bottom: 20px;
+}
+
+#addBlogButton {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* #addBlogButton:hover {
+    background
+} */
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+} */
+
+h1 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+p em {
+    color: #777;
+}
+
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Chatroom</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="triel07.html">Home</a></li>
+        <li><a href="triel11.html">About</a></li>
+        <li><a href="triel10.html">Contact</a></li>
+        <li><a href="#">blogs</a></li>
+        <li><a href="triel06.html">confession</a></li>
+      </ul>
+    </nav>
+    <main>
+        <h1>Welcome to the Blog Website</h1>
+        <div id="addBlogOption">
+            <button id="addBlogButton">Add Blog</button>
+        </div>
+    
+        <div id="blogFormContainer" style="display: none;">
+            <form id="blogForm">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required><br><br>
+                
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" required><br><br>
+                
+                <label for="content">Content:</label><br>
+                <textarea id="content" name="content" rows="5" cols="50" required></textarea><br><br>
+                
+                <input type="submit" value="Submit Blog">
+            </form>
+        </div>
+        
+        <h2>Blog Posts</h2>
+        <ul id="blogList" style="display: none;">
+            <!-- Existing blog posts will be dynamically added here -->
+        </ul>
+        
+        <script src="script02.js"></script>
+    </main>
+    <footer>
+      
+      <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
